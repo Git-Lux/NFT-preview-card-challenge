@@ -1,0 +1,135 @@
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.equilibrium {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+article div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    height: 350px;
+    width: 350px;
+    transform: translate(0, -355px);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+article div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.eyeoverlay img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.equilibrium:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%, 60%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li:first-child {
+    color: hsl(178, 100%, 50%);
+}
+
+ul li:last-child {
+    color: hsl(215, 51%, 70%);
+}
+
+ul img {
+    margin-right: 0.5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+}
+
+footer img {
+    border: 4px solid hsl(0, 0%, 100%);
+    border-radius: 80%;
+    width: 3rem;
+    margin-right: 1.2rem;
+}
+
+footer span:first-child {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+footer span:last-child {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+footer span:last-child:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228,45%, 44%);
+}
